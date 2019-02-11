@@ -1,0 +1,63 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewsport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN</title>
+        <!-- Load bootstrap css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Load jquery and bootstarp js -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script type="text/javascript">
+        function myFunction(){
+            let a = "joko";
+            let b = "telo";   
+            let c = document.getElementById('username').value;
+            let d = document.getElementById('password').value;
+            
+        if((a == c)&&(b == d)){
+            alert("Username dan password betul");
+        } 
+        
+        else if((a != c)&&(b != d)){
+            alert("Username dan password salah semua");
+        }
+
+        else if(b != d){        
+            alert("Username sudah betul namun password salah");
+        }
+
+        else if(a != c){        
+            alert("Password sudah betul namun username salah");
+        }
+
+        }
+
+        </script>
+    </head>
+    <body>
+        <div class="container" style="padding: top 6rem; max-width: 50%;">
+        <div class="card">
+            <div class="card-header bg-primary text-center">
+                Form Login
+            </div>
+            <div class="card-body">
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label for="nama">Username</label>
+                        <input type="text" name="Username" id="username" placeholder="Username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input onclick="myFunction()" type="submit" name="register" class="btn btn-warning btn-block" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>   
+    </body>
+</html>
